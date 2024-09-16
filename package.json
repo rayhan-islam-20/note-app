@@ -1,0 +1,14 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "note application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rayhan",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note app</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <div class="bg-[#1E201E]">
+        <div class="container mx-auto py-10 ">
+            <nav class="text-white flex justify-center items-center gap-40">
+                <div class=" text-[#ECDFCC] font-bold">NOTE APP</div>
+                <div class="flex gap-4">
+                    <div >
+                        <button id ="all-note" class=" bg-[#3C3D37] rounded py-1 px-3 hover:bg-[#697565] transition-all">All Note</button>
+                        <span id ="all-note-count" class="py-1 px-3 rounded bg-[#697565]">0</span>
+                    </div>
+                    <div>
+                        <button id ="fev-item" class="bg-[#3C3D37] rounded py-1 px-3 hover:bg-[#697565] transition-all">Fev Note</button>
+                        <span id="fev-count" class="py-1 px-3 rounded bg-[#697565]">0</span>
+                    </div>
+                    <!-- <div>
+                        <button class="bg-[#3C3D37] rounded py-1 px-3 hover:bg-[#697565] transition-all">Total Note</button>
+                        <span class="py-1 px-3 rounded bg-[#697565]">0</span>
+                    </div> -->
+                    
+                </div>
+            </nav>
+        </div>
+        <div class="container mx-auto flex justify-center items-center py-2  ">
+            <form action="" id="note-form" class="w-[40%] my-4 text-white">
+                <div class="titel-field ">
+                    <input  type="text" name="title" placeholder="Title" autofocus id="titel" class="py-2  rounded px-2 w-full bg-black bg-transparent  outline-none text-[30px]">
+                </div>
+                <div class="content-field my-4">
+                    <textarea id="text-content" placeholder="Write your content" class="py-2 rounded px-2 w-full h-20  bg-black outline-none border-none bg-transparent"></textarea>
+                </div>
+                <div class="">
+                    <button id="addButton" type="submit" class="w-full rounded py-2 px-3 bg-[#FF8343] ">Create Note</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="allList container mx-auto flex justify-center items-center ">
+        <ul id="note-list" class="py-6 w-[60%]">
+            <!-- <li class="flex justify-center items-center bg-[#ECDFCC] rounded p-4 my-6 shadow-md">
+                <div class="flex-col justify-center items-center w-[70%]">
+                    <div class="my-3">
+                        <h1 class="text-lg font-bold">Titel</h1>
+                    </div>
+                    <div>
+                        <p>Set an element’s line-height at the same time you set the font size by adding a line</p>
+                    </div>
+                    <div class="date my-3">
+                        <span class="text-[#3C3D37]">1/23/24</span>
+                    </div>
+                </div>
+                <div class="flex justify-end items-center w-[30%] gap-4">
+                    <div id="fev-item">
+                       <button> <i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div id="edit-items">
+                        <button> <i class="fa-solid fa-pen"></i></button>
+                       
+                    </div>
+                    <div id="remove-item">
+                     <button>   <i class="fa-solid fa-trash"></i></button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="flex justify-center items-center  bg-[#ECDFCC] rounded p-4 ">
+                <div class="flex-col justify-center items-center w-[70%]">
+                    <div class="my-3">
+                        <h1 class="text-lg font-bold">Titel</h1>
+                    </div>
+                    <div>
+                        <p>Set an element’s line-height at the same time you set the font size by adding a line</p>
+                    </div>
+                    <div class="date my-3">
+                        <span class="text-[#3C3D37]">1/23/24</span>
+                    </div>
+                </div>
+                <div class="flex justify-end items-center w-[30%] gap-4">
+                    <div id="fev-item">
+                       <button> <i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div id="edit-items">
+                        <button> <i class="fa-solid fa-pen"></i></button>
+                       
+                    </div>
+                    <div id="remove-item">
+                     <button>   <i class="fa-solid fa-trash"></i></button>
+                    </div>
+
+                </div>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="index.js" type="module" ></script>
+</body>
+</html>
